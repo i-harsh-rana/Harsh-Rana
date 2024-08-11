@@ -29,6 +29,11 @@
     color: var(--title-color-dark);
 }
 
+.qualification__unactive{
+    font-weight: 100;
+    color: var(--text-color);
+}
+
 .qualification__sections{
     display: grid;
     grid-template-columns: 0.5fr;
@@ -74,7 +79,7 @@
 
 .qualification__line{
     display: flex;
-    width: 1.2px;
+    width: 1px;
     height: 100%;
     background-color: var(--text-color);
     transform: translate(6px, -7px);

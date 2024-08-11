@@ -35,13 +35,13 @@
     justify-content: center;
 }
 
-/* .qualification__content{
+.qualification__content{
     display: none;
 }
 
 .qualification__content-active{
     display: block;
-} */
+}
 
 .qualification__data{
     display: grid;
@@ -66,15 +66,15 @@
 
 .qualification__rounder{
     display: inline-block;
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     background-color: var(--text-color);
     border-radius: 50%;
 }
 
 .qualification__line{
     display: flex;
-    width: 1px;
+    width: 1.2px;
     height: 100%;
     background-color: var(--text-color);
     transform: translate(6px, -7px);

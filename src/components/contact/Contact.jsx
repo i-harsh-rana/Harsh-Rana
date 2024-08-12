@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react';
 import "./Contact.css"
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    console.log(import.meta.env.VITE_SERVICE_ID)
+
+    emailjs
+    .sendForm(
+      import.meta.env.VITE_YOUR_SERVICE_ID,
+      import.meta.env.VITE_YOUR_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_YOUR_PUBLIC_KEY
+    )
+    e.target.reset()
+  
+  };
+
   return (
     <section className="contact section" id='contact'>
         <h2 className="section__title">Get in touch</h2>
@@ -32,6 +53,16 @@ const Contact = () => {
 
                     </div>
 
+                    <div className="contact__card">
+                    <i class='bx bx-phone-call contact__card-icon'></i>
+
+                        <h3 className="contact__card-title">Call</h3>
+                        <span className="contact__card-data">+91 7351758454</span>
+
+                        <a href="tel:+917351758454" className="contact__button">Call me{" "} <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -39,7 +70,7 @@ const Contact = () => {
                 <h3 className="contact__title">Send me your message!</h3>
 
 
-                <form className="contact__form">
+                <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
                         <input type="text" name='name' className='contact__form-input' placeholder='Insert your name' required/>
@@ -50,8 +81,8 @@ const Contact = () => {
                         <input type="email" name='email' className='contact__form-input' placeholder='Insert your email' required/>
                     </div>
 
-                    <div className="contact__form-div">
-                        <label className="contact__form-tag">Message</label>
+                    <div className="contact__form-div contact__from-area">
+                        <label className="contact__form-tag ">Message</label>
                         <textarea name="message" cols="30" rows="10" className='contact__form-input' placeholder='Message!'></textarea>
                     </div>
 

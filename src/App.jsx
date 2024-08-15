@@ -9,6 +9,10 @@ import Qualification from "./components/qualification/Qualification";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer"
 
+
+
+
+
 const App = ()=>{
     return (
         <>
@@ -21,6 +25,7 @@ const App = ()=>{
             <Qualification/>
             <Contact/>
             <Footer/>
+            
         </main>
         </>
     )

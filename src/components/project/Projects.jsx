@@ -1,9 +1,33 @@
 import React, { useState } from 'react'
 import './Projects.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ProjectPreview from './Projects.preview'
 
 function Projects() {
 
 const [toggleState, setToggleState] = useState(0)
+
+const Blogi = [
+    '../../public/Blogi/1.png',
+    '../../public/Blogi/2.png',
+    '../../public/Blogi/3.png',
+    '../../public/Blogi/4.png',
+    '../../public/Blogi/5.png',
+    '../../public/Blogi/6.png',
+]
+
+const WonderLust = [
+    '../../public/WonderLust/1.png',
+    '../../public/WonderLust/2.png',
+    '../../public/WonderLust/3.png',
+    '../../public/WonderLust/4.png',
+    '../../public/WonderLust/5.png',
+    '../../public/WonderLust/6.png',
+    '../../public/WonderLust/7.png',
+    '../../public/WonderLust/8.png',
+    
+]
 
 const toggleTab = (index)=>{
     setToggleState(index)
@@ -26,7 +50,9 @@ const toggleTab = (index)=>{
 
                 <div className={toggleState === 2 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
+                    <ProjectPreview imagearr = {Blogi} />
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+                        <a href="https://github.com/i-harsh-rana/Blogi"><i className='bx bxl-github projects__modal-visitlink'></i></a>
 
                         <h3 className="projects__modal-title">Blogi</h3>
                         <p className="projects__modal-description">
@@ -84,7 +110,12 @@ const toggleTab = (index)=>{
 
                 <div className={toggleState === 3 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
+                        <div className='projects__process'>
+                            <div className='projects__process-section'><img src='../../public/process.svg' style={{width: '14rem'}}  /></div>
+                            <div className='projects__process-section'> <p className='process'>Work on process in this project...</p></div>
+                        </div>
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+                        <a href="https://github.com/i-harsh-rana/StreamUp"><i className='bx bxl-github projects__modal-visitlink'></i></a>
 
                         <h3 className="projects__modal-title">StreamUp</h3>
                         <p className="projects__modal-description">
@@ -142,7 +173,10 @@ const toggleTab = (index)=>{
 
                 <div className={toggleState === 1 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
+                    <ProjectPreview imagearr = {WonderLust} />
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+                        <a href="https://github.com/i-harsh-rana/WonderLust"><i className='bx bxl-github projects__modal-visitlink'></i></a>
+                        
 
                         <h3 className="projects__modal-title">WonderLust</h3>
                         <p className="projects__modal-description">
@@ -208,6 +242,7 @@ const toggleTab = (index)=>{
                 <div className={toggleState === 4 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+                        <a href="https://github.com/i-harsh-rana/Harsh-Rana"><i className='bx bxl-github projects__modal-visitlink'></i></a>
 
                         <h3 className="projects__modal-title">Protfolio Website</h3>
                         <p className="projects__modal-description">

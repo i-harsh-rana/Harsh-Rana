@@ -60,7 +60,7 @@
 }
 
 .projects__modal-content{
-    width: 500px;
+    width: 600px;
     position: relative;
     background-color: var(--container-color);
     padding: 4.5rem 2.5rem 2.5rem;
@@ -74,6 +74,36 @@
     font-size: 1.5rem;
     color: var(--title-color);
     cursor: pointer;
+}
+
+.projects__process{
+    display: flex;
+    height: 13rem;
+    align-items: center;
+}
+
+.projects__process--section{
+    height: 100%;
+    font-size: var(--small-font-size);
+}
+
+.projects__modal-visitlink{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.projects__modal-visitlink:hover{
+    font-weight: var(--font-medium);
+    color: var(--title-color-dark);
+}
+
+.process{
+    padding-left: 0.8rem;
+    font-size: var(--small-font-size);
 }
 
 .projects__modal-title
@@ -142,6 +172,7 @@
     
     .projects__modal-content{
         padding: 4.5rem 1.5rem 2.5rem;
+        width: 350px;
     }
 
     .projects__modal-description{

@@ -9,23 +9,23 @@ function Projects() {
 const [toggleState, setToggleState] = useState(0)
 
 const Blogi = [
-    '../../public/Blogi/1.png',
-    '../../public/Blogi/2.png',
-    '../../public/Blogi/3.png',
-    '../../public/Blogi/4.png',
-    '../../public/Blogi/5.png',
-    '../../public/Blogi/6.png',
+    '../../public/Blogi/1.jpg',
+    '../../public/Blogi/2.jpg',
+    '../../public/Blogi/3.jpg',
+    '../../public/Blogi/4.jpg',
+    '../../public/Blogi/5.jpg',
+    '../../public/Blogi/6.jpg',
 ]
 
 const WonderLust = [
-    '../../public/WonderLust/1.png',
-    '../../public/WonderLust/2.png',
-    '../../public/WonderLust/3.png',
-    '../../public/WonderLust/4.png',
-    '../../public/WonderLust/5.png',
-    '../../public/WonderLust/6.png',
-    '../../public/WonderLust/7.png',
-    '../../public/WonderLust/8.png',
+    '../../public/WonderLust/1.jpg',
+    '../../public/WonderLust/2.jpg',
+    '../../public/WonderLust/3.jpg',
+    '../../public/WonderLust/4.jpg',
+    '../../public/WonderLust/5.jpg',
+    '../../public/WonderLust/6.jpg',
+    '../../public/WonderLust/7.jpg',
+    '../../public/WonderLust/8.jpg',
     
 ]
 

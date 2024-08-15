@@ -18,7 +18,7 @@ const About = () => {
                 
                 <p className="about__description">I specialize in the MERN stack, which includes MongoDB, Express.js, React, and Node.js. This powerful combination allows me to build full-stack web applications with a seamless workflow from front-end to back-end.</p>
             
-                <a download="CV" href="" className="button button--flex">
+                <a download={CV} href="" className="button button--flex">
                     Donwload CV
                     <svg
                 class="button__icon"

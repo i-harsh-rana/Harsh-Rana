@@ -36,7 +36,7 @@ const Social = () => {
         <Lottie options={defaultOptions} height={22} width={22} />
         </a>
 
-        <a href="www.linkedin.com/in/iharshrana" className="home__social-icon" target='_blank'>
+        <a href="https://www.linkedin.com/in/iharshrana/" className="home__social-icon" target='_blank'>
         <Lottie options={defaultOptions2} height={22} width={22} />
         </a>
 

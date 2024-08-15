@@ -3,18 +3,25 @@ import './Projects.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectPreview from './Projects.preview'
+import blogi1 from '../../assets/1blogi.jpg'
+import blogi2 from '../../assets/2blogi.jpg'
+import blogi3 from '../../assets/3blogi.jpg'
+import blogi4 from '../../assets/4blogi.jpg'
+import blogi5 from '../../assets/5blogi.jpg'
+import blogi6 from '../../assets/5blogi.jpg'
+
 
 function Projects() {
 
 const [toggleState, setToggleState] = useState(0)
 
 const Blogi = [
-    '../../public/Blogi/1.jpg',
-    '../../public/Blogi/2.jpg',
-    '../../public/Blogi/3.jpg',
-    '../../public/Blogi/4.jpg',
-    '../../public/Blogi/5.jpg',
-    '../../public/Blogi/6.jpg',
+    blogi1,
+    blogi2,
+    blogi3,
+    blogi4,
+    blogi5,
+    blogi6
 ]
 
 const WonderLust = [

@@ -57,6 +57,7 @@
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    margin-left: 1rem;
 }
 
 .projects__modal-content{

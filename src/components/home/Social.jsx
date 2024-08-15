@@ -31,16 +31,17 @@ const Social = () => {
   };
   return (
     <div className="home__social">
-        <a href="https://www.instagram.com/" className="home__social-icon" target='_blank'>
-        <Lottie options={defaultOptions1} height={22} width={22} />
-        </a>
 
-        <a href="https://www.github.com/" className="home__social-icon" target='_blank'>
+        <a href="https://github.com/i-harsh-rana" className="home__social-icon" target='_blank'>
         <Lottie options={defaultOptions} height={22} width={22} />
         </a>
 
-        <a href="https://www.linkdin.com/" className="home__social-icon" target='_blank'>
+        <a href="www.linkedin.com/in/iharshrana" className="home__social-icon" target='_blank'>
         <Lottie options={defaultOptions2} height={22} width={22} />
+        </a>
+
+        <a href="https://www.instagram.com/i_harsh_rana?igsh=MWx6aGt2MzI3a216MQ==" className="home__social-icon" target='_blank'>
+        <Lottie options={defaultOptions1} height={22} width={22} />
         </a>
     </div>
   )

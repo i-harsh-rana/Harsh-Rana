@@ -9,6 +9,16 @@ import blogi3 from '../../assets/3blogi.jpg'
 import blogi4 from '../../assets/4blogi.jpg'
 import blogi5 from '../../assets/5blogi.jpg'
 import blogi6 from '../../assets/5blogi.jpg'
+import wonderlust1 from '../../assets/1wonderlust.jpg'
+import wonderlust2 from '../../assets/2wonderlust.jpg'
+import wonderlust3 from '../../assets/3wonderlust.jpg'
+import wonderlust4 from '../../assets/4wonderlust.jpg'
+import wonderlust5 from '../../assets/5wonderlust.jpg'
+import wonderlust6 from '../../assets/6wonderlust.jpg'
+import wonderlust7 from '../../assets/7wonderlust.jpg'
+import wonderlust8 from '../../assets/8wonderlust.jpg'
+import process from '../../assets/process.svg'
+
 
 
 function Projects() {
@@ -25,14 +35,14 @@ const Blogi = [
 ]
 
 const WonderLust = [
-    '../../public/WonderLust/1.jpg',
-    '../../public/WonderLust/2.jpg',
-    '../../public/WonderLust/3.jpg',
-    '../../public/WonderLust/4.jpg',
-    '../../public/WonderLust/5.jpg',
-    '../../public/WonderLust/6.jpg',
-    '../../public/WonderLust/7.jpg',
-    '../../public/WonderLust/8.jpg',
+    wonderlust1,
+    wonderlust2,
+    wonderlust3,
+    wonderlust4,
+    wonderlust5,
+    wonderlust6,
+    wonderlust7,
+    wonderlust8,
     
 ]
 
@@ -118,8 +128,8 @@ const toggleTab = (index)=>{
                 <div className={toggleState === 3 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
                         <div className='projects__process'>
-                            <div className='projects__process-section'><img src='../../public/process.svg' style={{width: '14rem'}}  /></div>
-                            <div className='projects__process-section'> <p className='process'>Work on process in this project...</p></div>
+                            <div className='projects__process-section'><img src={process} style={{width: '14rem'}}  /></div>
+                            <div className='projects__process-section'> <p className='process'>Work on the process in this project...</p></div>
                         </div>
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
                         <a href="https://github.com/i-harsh-rana/StreamUp"><i className='bx bxl-github projects__modal-visitlink'></i></a>

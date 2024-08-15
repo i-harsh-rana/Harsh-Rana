@@ -196,6 +196,43 @@ const toggleTab = (index)=>{
                     </div>
                 </div>
             </div>
+
+            <div className="projects__content">
+                <div>
+                    <i className="uil uil-bag projects__icon"></i>
+                    <h3 className="projects__title">Protfolio <br/> Website</h3>
+                </div>
+
+                <span className="projects__button" onClick={()=>toggleTab(4)}>View More <i className="uil uil-arrow-right projects__button-icon"></i></span>
+
+                <div className={toggleState === 4 ? "projects__modal active-modal" : "projects__modal"}>
+                    <div className="projects__modal-content">
+                        <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+
+                        <h3 className="projects__modal-title">Protfolio Website</h3>
+                        <p className="projects__modal-description">
+                        This portfolio website showcases all my work experience, contact details, skills, and personal information. It serves as a comprehensive digital profile, allowing potential employers and collaborators to get a clear picture of my professional journey and capabilities.
+                        </p>
+
+                        <ul className="projects__modal-projects grid">
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                React: Utilized for building a dynamic and responsive user interface.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                CSS: Employed for styling the website to ensure a clean and visually appealing design.
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>

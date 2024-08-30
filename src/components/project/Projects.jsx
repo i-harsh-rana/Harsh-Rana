@@ -129,7 +129,7 @@ const toggleTab = (index)=>{
                     <div className="projects__modal-content">
                         <div className='projects__process'>
                             <div className='projects__process-section'><img src={process} style={{width: '14rem'}}  /></div>
-                            <div className='projects__process-section'> <p className='process'>Backend is done, currently woking in Frontend..</p></div>
+                            <div className='projects__process-section'> <p className='process'>Backend completed;<br/> focusing on frontend now..</p></div>
                         </div>
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
                         <a href="https://github.com/i-harsh-rana/StreamUp"><i className='bx bxl-github projects__modal-visitlink'></i></a>

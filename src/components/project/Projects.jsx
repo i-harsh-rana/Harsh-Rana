@@ -17,6 +17,18 @@ import wonderlust5 from '../../assets/5wonderlust.jpg'
 import wonderlust6 from '../../assets/6wonderlust.jpg'
 import wonderlust7 from '../../assets/7wonderlust.jpg'
 import wonderlust8 from '../../assets/8wonderlust.jpg'
+import streamUp1 from '../../assets/1Stream.png'
+import streamUp2 from '../../assets/2Stream.png'
+import streamUp3 from '../../assets/3Stream.png'
+import streamUp4 from '../../assets/4Stream.png'
+import streamUp5 from '../../assets/5Stream.png'
+import streamUp6 from '../../assets/6Stream.png'
+import streamUp7 from '../../assets/7Stream.png'
+import streamUp8 from '../../assets/8Stream.png'
+import streamUp9 from '../../assets/9Stream.png'
+import streamUp10 from '../../assets/10Stream.png'
+import streamUp11 from '../../assets/11Stream.png'
+import streamUp12 from '../../assets/12Stream.png'
 import process from '../../assets/process.svg'
 
 
@@ -44,6 +56,21 @@ const WonderLust = [
     wonderlust7,
     wonderlust8,
     
+]
+
+const StreamUp = [
+    streamUp1,
+    streamUp2,
+    streamUp3,
+    streamUp4,
+    streamUp5,
+    streamUp6,
+    streamUp7,
+    streamUp8,
+    streamUp9,
+    streamUp10,
+    streamUp11,
+    streamUp12
 ]
 
 const toggleTab = (index)=>{
@@ -127,16 +154,17 @@ const toggleTab = (index)=>{
 
                 <div className={toggleState === 3 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
-                        <div className='projects__process'>
+                    <ProjectPreview imagearr = {StreamUp} />
+                        {/* <div className='projects__process'>
                             <div className='projects__process-section'><img src={process} style={{width: '14rem'}}  /></div>
                             <div className='projects__process-section'> <p className='process'>Backend completed;<br/> focusing on frontend now..</p></div>
-                        </div>
+                        </div> */}
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
                         <a href="https://github.com/i-harsh-rana/StreamUp"><i className='bx bxl-github projects__modal-visitlink'></i></a>
 
                         <h3 className="projects__modal-title">StreamUp</h3>
                         <p className="projects__modal-description">
-                        StreamUp is a backend platform for a streaming service similar to YouTube, focusing on managing video content, user authentication, and streaming functionalities. This project emphasizes backend development with production-level code.
+                        StreamUp is a YouTube-inspired platform for streaming and sharing videos. It allows users to watch, like, comment on videos, and manage personal profiles. With advanced features like custom playlists, dashboards, and a seamless video posting system, StreamUp offers a comprehensive video-sharing experience.
 
                         </p>
 
@@ -144,21 +172,21 @@ const toggleTab = (index)=>{
                             <li className="projects__modal-service">
                                 <i className="uil uil-check-circle projects__modal-icon"></i>
                                 <p className="projects__modal-info">
-                                Node.js: JavaScript runtime for server-side development.
+                                Built with MongoDB, Express.js, React, and Node.js (MERN stack)
                                 </p>
                             </li>
 
                             <li className="projects__modal-service">
                                 <i className="uil uil-check-circle projects__modal-icon"></i>
                                 <p className="projects__modal-info">
-                                Express.js: Framework for building and managing web server APIs.
+                                MongoDB: For storing user data, video details, and managing custom playlists with advanced aggregation pipelines for complex queries.
                                 </p>
                             </li>
 
                             <li className="projects__modal-service">
                                 <i className="uil uil-check-circle projects__modal-icon"></i>
                                 <p className="projects__modal-info">
-                                MongoDB: NoSQL database for storing video and user data.
+                                Express.js: Backend framework for building API endpoints and handling server-side logic.
                                 </p>
                             </li>
 
@@ -172,7 +200,28 @@ const toggleTab = (index)=>{
                             <li className="projects__modal-service">
                                 <i className="uil uil-check-circle projects__modal-icon"></i>
                                 <p className="projects__modal-info">
-                                bcrypt & jsonwebtoken: Used together for secure user authentication and password hashing.
+                                Node.js: Backend runtime environment for server-side JavaScript execution.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                Cloudinary: Used for efficient video storage, optimization, and seamless media management.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                Redux: Utilized for managing global state, particularly for handling logged-in user profiles across the app.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                JWT (JSON Web Tokens): Used for secure authentication and authorization, ensuring users have access to appropriate features and content based on their login status.
                                 </p>
                             </li>
                         </ul>

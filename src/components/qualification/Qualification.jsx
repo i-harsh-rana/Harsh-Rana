@@ -88,7 +88,7 @@ const Qualification = () => {
                             <h3 className="qualification__title">Full Stack Web Developer Intern</h3>
                             <span className="qualification__subtitle">EduChanger Solutions, Noida, India </span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 25th July, 2024 - Present
+                                <i className="uil uil-calendar-alt"></i> 25th July, 2024 - 25th October, 2024
                             </div>
                         </div>
 

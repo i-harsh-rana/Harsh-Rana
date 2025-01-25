@@ -29,6 +29,14 @@ import streamUp9 from '../../assets/9Stream.png'
 import streamUp10 from '../../assets/10Stream.png'
 import streamUp11 from '../../assets/11Stream.png'
 import streamUp12 from '../../assets/12Stream.png'
+import sync1 from '../../assets/1sync.jpg'
+import sync2 from '../../assets/2sync.jpg'
+import sync3 from '../../assets/3sync.jpg'
+import sync4 from '../../assets/4sync.jpg'
+import sync5 from '../../assets/5sync.jpg'
+import sync6 from '../../assets/6sync.jpg'
+import sync7 from '../../assets/7sync.jpg'
+import sync8 from '../../assets/8sync.jpg'
 import process from '../../assets/process.svg'
 
 
@@ -36,6 +44,17 @@ import process from '../../assets/process.svg'
 function Projects() {
 
 const [toggleState, setToggleState] = useState(0)
+
+const Sync = [
+    sync1,
+    sync2,
+    sync3,
+    sync4,
+    sync5,
+    sync6,
+    sync7,
+    sync8,
+]
 
 const Blogi = [
     blogi1,
@@ -83,6 +102,72 @@ const toggleTab = (index)=>{
         <span className="section__subtitle">My work</span>
 
         <div className="projects__container container grid">
+
+        <div className="projects__content">
+                <div>
+                    <i className="uil uil-file-medical-alt projects__icon"></i>
+                    <h3 className="projects__title">SyncSheet</h3>
+                </div>
+
+                <span onClick={()=>toggleTab(5)} className="projects__button">View More <i className="uil uil-arrow-right projects__button-icon"></i></span>
+
+                <div className={toggleState === 5 ? "projects__modal active-modal" : "projects__modal"}>
+                    <div className="projects__modal-content">
+                    <ProjectPreview imagearr = {Sync} />
+                        <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+                        <a href="https://github.com/i-harsh-rana/Blogi"><i className='bx bxl-github projects__modal-visitlink'></i></a>
+
+                        <h3 className="projects__modal-title">SyncSheet</h3>
+                        <p className="projects__modal-description">
+                        SyncSheet is a real-time collaboration platform that simplifies document editing and sharing. It offers live editing, customizable sharing permissions, and secure access, enabling teams to work together seamlessly and efficiently.
+                        </p>
+
+                        <ul className="projects__modal-projects grid">
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                Frontend: Built with React for a dynamic and responsive user interface.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                Backend: Powered by Node.js and Express.js to handle server-side operations.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                Database: MongoDB for efficient and scalable data storage.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                Real-Time Collaboration: Implemented using Socket.io for live document editing.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                State Management: Managed with Redux for seamless user interaction and data flow.
+                                </p>
+                            </li>
+                            
+                            <li className="projects__modal-service">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                Authentication: Secure login system with JWT and OAuth for social login options.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <div className="projects__content">
                 <div>

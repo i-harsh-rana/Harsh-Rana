@@ -67,15 +67,16 @@
     border-radius: 1.5rem;
     margin-top: 2rem;
     height: 90%;
-    overflow-y: scroll;
-    
-    scrollbar-width: thin;
-    scrollbar-color: black transparent;
+    overflow-y: scroll; 
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
 
 .projects__modal-content::-webkit-scrollbar {
-    width: 8px; 
+    display: none; 
 }
+
 
 .projects__modal-content::-webkit-scrollbar-track {
     margin-top: 1.1rem;
@@ -143,7 +144,7 @@
     font-size: var(--small-font-size);
     padding: 0 0.7rem;
     margin-bottom: var(--mb-2);
-    text-wrap: pretty;
+    text-align: justify;
 }
 
 .projects__modal-projects{

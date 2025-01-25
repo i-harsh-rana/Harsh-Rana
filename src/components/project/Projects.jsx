@@ -157,7 +157,7 @@ const toggleTab = (index)=>{
                                 State Management: Managed with Redux for seamless user interaction and data flow.
                                 </p>
                             </li>
-                            
+
                             <li className="projects__modal-service">
                                 <i className="uil uil-check-circle projects__modal-icon"></i>
                                 <p className="projects__modal-info">
@@ -169,65 +169,6 @@ const toggleTab = (index)=>{
                 </div>
             </div>
 
-            <div className="projects__content">
-                <div>
-                    <i className="uil uil-document-layout-right projects__icon"></i>
-                    <h3 className="projects__title">Blogi</h3>
-                </div>
-
-                <span onClick={()=>toggleTab(2)} className="projects__button">View More <i className="uil uil-arrow-right projects__button-icon"></i></span>
-
-                <div className={toggleState === 2 ? "projects__modal active-modal" : "projects__modal"}>
-                    <div className="projects__modal-content">
-                    <ProjectPreview imagearr = {Blogi} />
-                        <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
-                        <a href="https://github.com/i-harsh-rana/Blogi"><i className='bx bxl-github projects__modal-visitlink'></i></a>
-
-                        <h3 className="projects__modal-title">Blogi</h3>
-                        <p className="projects__modal-description">
-                        Blogi is a blogging platform where users can log in, post blogs, and read blogs from others. The project focuses mainly on frontend development with production-level code.
-
-                        </p>
-
-                        <ul className="projects__modal-projects grid">
-                            <li className="projects__modal-service">
-                                <i className="uil uil-check-circle projects__modal-icon"></i>
-                                <p className="projects__modal-info">
-                                React: Library for building user interfaces.
-                                </p>
-                            </li>
-
-                            <li className="projects__modal-service">
-                                <i className="uil uil-check-circle projects__modal-icon"></i>
-                                <p className="projects__modal-info">
-                                Redux: State management for maintaining application state.
-                                </p>
-                            </li>
-
-                            <li className="projects__modal-service">
-                                <i className="uil uil-check-circle projects__modal-icon"></i>
-                                <p className="projects__modal-info">
-                                Apwrite: Backend-as-a-service for handling authentication and data storage.
-                                </p>
-                            </li>
-
-                            <li className="projects__modal-service">
-                                <i className="uil uil-check-circle projects__modal-icon"></i>
-                                <p className="projects__modal-info">
-                                React Forms: Used for creating and managing forms efficiently.
-                                </p>
-                            </li>
-
-                            <li className="projects__modal-service">
-                                <i className="uil uil-check-circle projects__modal-icon"></i>
-                                <p className="projects__modal-info">
-                                TinyMCE: Rich text editor for creating and editing blog content.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
             <div className="projects__content">
                 <div>
@@ -243,7 +184,7 @@ const toggleTab = (index)=>{
                         {/* <div className='projects__process'>
                             <div className='projects__process-section'><img src={process} style={{width: '14rem'}}  /></div>
                             <div className='projects__process-section'> <p className='process'>Backend completed;<br/> focusing on frontend now..</p></div>
-                        </div> */}
+                            </div> */}
                         <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
                         <a href="https://github.com/i-harsh-rana/StreamUp"><i className='bx bxl-github projects__modal-visitlink'></i></a>
 
@@ -311,6 +252,58 @@ const toggleTab = (index)=>{
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+
+            
+            <div className="projects__content">
+                <div>
+                      <i className="uil uil-document-layout-right projects__icon"></i>
+                      <h3 className="projects__title">Blogi</h3>
+                 </div> 
+                 <span onClick={()=>toggleTab(2)} className="projects__button">View More <i className="uil uil-arrow-right projects__button-icon"></i></span>   
+                 <div className={toggleState === 2 ? "projects__modal active-modal" : "projects__modal"}>
+                     <div className="projects__modal-content">
+                     <ProjectPreview imagearr = {Blogi} />
+                          <i onClick={()=>toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+                          <a href="https://github.com/i-harsh-rana/Blogi"><i className='bx bxl-github projects__modal-visitlink'></i></a>   
+                         <h3 className="projects__modal-title">Blogi</h3>
+                          <p className="projects__modal-description">
+                         Blogi is a blogging platform where users can log in, post blogs, and read blogs from others. The project focuses mainly on frontend development with production-level code.    
+                         </p>   
+                          <ul className="projects__modal-projects grid">
+                             <li className="projects__modal-service">
+                                 <i className="uil uil-check-circle projects__modal-icon"></i>
+                                 <p className="projects__modal-info">
+                                 React: Library for building user interfaces.
+                                 </p>
+                             </li>  
+                             <li className="projects__modal-service">
+                                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                                  <p className="projects__modal-info">
+                                  Redux: State management for maintaining application state.
+                                  </p>
+                              </li> 
+                              <li className="projects__modal-service">
+                                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                                  <p className="projects__modal-info">
+                                  Apwrite: Backend-as-a-service for handling authentication and data storage.
+                                  </p>
+                              </li> 
+                              <li className="projects__modal-service">
+                                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                                  <p className="projects__modal-info">
+                                  React Forms: Used for creating and managing forms efficiently.
+                                  </p>
+                              </li> 
+                              <li className="projects__modal-service">
+                                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                                  <p className="projects__modal-info">
+                                 TinyMCE: Rich text editor for creating and editing blog content.
+                                  </p>
+                              </li>
+                          </ul>
+                      </div>
                 </div>
             </div>
 

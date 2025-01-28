@@ -7,16 +7,6 @@ const Devops = () => {
 
     <div className="skills__box">
         <div className="skills__group">
-            <div className="skills__data">
-            <i class='bx bx-badge-check'></i>
-            <div>
-                <h4 className="skills__name">Computer Networking</h4>
-                <span className="skills__level"></span>
-            </div>
-            </div>
-
-        </div>
-        <div className="skills__group">
 
             <div className="skills__data">
             <i class='bx bx-badge-check'></i>
@@ -32,6 +22,16 @@ const Devops = () => {
                 <span className="skills__level"></span>
             </div>
             </div>
+        </div>
+        <div className="skills__group">
+            <div className="skills__data">
+            <i class='bx bx-badge-check'></i>
+            <div>
+                <h4 className="skills__name">Computer Networking</h4>
+                <span className="skills__level"></span>
+            </div>
+            </div>
+
         </div>
     </div>
 </div>

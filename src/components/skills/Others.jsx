@@ -34,6 +34,7 @@ const Others = () => {
                     <span className="skills__level"></span>
                 </div>
                 </div>
+            
             </div>
         </div>
     </div>

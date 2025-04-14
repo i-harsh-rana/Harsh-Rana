@@ -19,7 +19,7 @@ const About = () => {
                 <p className="about__description">I specialize in the MERN stack (MongoDB, Express.js, React, Node.js), enabling me to build seamless and efficient full-stack web applications. Beyond web development, I have strong problem-solving skills in Data Structures and Algorithms, which help me craft scalable and optimized solutions. Additionally, my knowledge of Computer Networking and Database Management Systems (DBMS) allows me to design secure, robust, and high-performance applications.</p>
             
                 <a download href={CV} className="button button--flex">
-                    Donwload CV
+                    Donwload Resume
                     <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

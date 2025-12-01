@@ -10,6 +10,22 @@ const Backend = () => {
                 <div className="skills__data">
                 <i class='bx bx-badge-check'></i>
                 <div>
+                    <h4 className="skills__name">Spring</h4>
+                    <span className="skills__level"></span>
+                </div>
+                </div>
+
+                <div className="skills__data">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4 className="skills__name">Spring Security</h4>
+                    <span className="skills__level"></span>
+                </div>
+                </div>
+
+                <div className="skills__data">
+                <i class='bx bx-badge-check'></i>
+                <div>
                     <h4 className="skills__name">Node JS</h4>
                     <span className="skills__level"></span>
                 </div>
@@ -24,6 +40,23 @@ const Backend = () => {
                 </div>
             </div>
             <div className="skills__group">
+
+                <div className="skills__data">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4 className="skills__name">Spring Boot</h4>
+                    <span className="skills__level"></span>
+                </div>
+                </div>
+                
+                <div className="skills__data">
+                <i class='bx bx-badge-check'></i>
+                <div>
+                    <h4 className="skills__name">Hibernate</h4>
+                    <span className="skills__level"></span>
+                </div>
+                </div>
+
                 <div className="skills__data">
                 <i class='bx bx-badge-check'></i>
                 <div>

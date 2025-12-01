@@ -16,7 +16,7 @@ const About = () => {
             <div className="about__data">
                 <Info/>
                 
-                <p className="about__description">I specialize in the MERN stack (MongoDB, Express.js, React, Node.js), enabling me to build seamless and efficient full-stack web applications. Beyond web development, I have strong problem-solving skills in Data Structures and Algorithms, which help me craft scalable and optimized solutions. Additionally, my knowledge of Computer Networking and Database Management Systems (DBMS) allows me to design secure, robust, and high-performance applications.</p>
+                <p className="about__description">I specialize in backend development using Java, leveraging frameworks like Spring Boot and Hibernate to build secure, scalable, and high-performance applications. My expertise includes designing RESTful APIs, implementing microservices architecture, and ensuring robust database integration. Alongside Java, I have experience with the MERN stack, enabling me to work on full-stack projects when required. Strong problem-solving skills in Data Structures and Algorithms help me craft optimized solutions, while my knowledge of Computer Networking and DBMS ensures reliable and secure system design.</p>
             
                 <a download href={CV} className="button button--flex">
                     Donwload Resume
